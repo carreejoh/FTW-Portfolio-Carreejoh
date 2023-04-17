@@ -1,0 +1,113 @@
+:root {
+    --moderngray: #222629;
+    --lightgray: #6B6E70 ;
+    --darkpurple: #501F3A;
+    --lightpurple: #ff6ca9;
+    --lightblue: #14A098;
+    --darkblue: #2E266D;
+}
+
+.headerScary{
+    background-color: var(--lightgray);
+    position: fixed;
+    width: 100%;
+    
+}
+
+.dangerlanding {
+    text-align: center;
+    padding: 15%;
+    padding-top: 15%;
+    background-color: var(--moderngray);
+    color: white;
+}
+
+.dangercolumn {
+    border: solid 2px yellow;
+}
+
+#theprojects {
+    background-color: var(--moderngray);
+}
+
+#showmethecode {
+    background-color: black;
+    height: 2500px;
+    border: solid 2px red;
+}
+
+#v1textlogodanger {
+    font-size: 38px;
+    text-shadow: 0px 0 , 0 0px black, 0px 0 black, 3px -3px var(--lightpurple);
+    color: var(--lightblue);
+}
+
+/* Projects Styling */
+
+.dangerprojects {
+    text-align: center;
+    color: white;
+    border: solid 2px red;
+    border-width: 2px 0px 2px 0px ;
+}
+
+#pswdreturn {
+    padding: 3%;
+    margin-top: 4%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.miniprojects {
+    z-index: 3;
+}
+
+.generatedwords {
+    margin-top: 3%;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    font-size: larger;
+}
+
+.typetestinputdiv {
+    margin-top: 3%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.typetestinput {
+    width: 100%;
+}
+
+.herocalculator {
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    padding: 3%;
+}
+
+#operation {
+    height: 80px;
+    text-align: center;
+}
+
+#calcnumber {
+
+    height: 80px;
+    text-align: center;
+}
+
+.calctext {
+    width: 100%; 
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+
+.doesntWork {
+    color: red;
+} 
+
+.workswell {
+    color: green;
+}

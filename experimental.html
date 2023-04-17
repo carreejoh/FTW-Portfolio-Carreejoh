@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carreejoh Portfolio</title>
+    <link rel="stylesheet" href="./style Assets/style.css">
+    <link rel="stylesheet" href="./style Assets/style2.css">
+    <link rel="stylesheet" href="./style Assets/styledanger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@800&family=Turret+Road:wght@500&display=swap" rel="stylesheet">
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
+  </head>
+
+  <body>
+    <main>
+        <div class="headerScary">
+            <div class="ui inverted secondary menu" id="heromenu">
+              <div class="item">
+                <a href="./index.html"><span class="ui huge text" id="carreelogo">Carreejoh<span id="v1textlogodanger">V3</span></span></a>
+              </div>
+            <div class="center menu">
+              <div class="item">
+                <button class="ui medium red button" id="menubtn">Resume</button>
+              </div>
+              <div class="item">
+                <button class="ui medium red button" id="menubtn">Skills</button>
+              </div>
+              <div class="item">
+                <button class="ui medium red button" id="menubtn">Projects</button>
+              </div>
+              <div class="item">
+                <button class="ui medium red button" id="menubtn">Other</button>
+              </div>
+              <div class="item">
+                <button class="ui medium red button">Experimental</button>
+              </div>
+            </div>
+            <div class="right menu">
+              <div class="item">
+                <p id="clockdisplay"></p>
+              </div>
+              <div class="item">
+                <div class="ui icon inverted button">
+                  <i class="wrench icon"></i>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+     
+
+
+        <div class="dangerlanding">
+            <div>
+                <h1>Welcome to the<span class="ui text red"> danger</span> zone!</h1>
+                <h3>This html page is a collection of mini javascript projects, different JS libraries, CSS animations, and other fun things I'd rather include in a seperate page. <br>
+                Chances are some things don't work quite right, but they should soon.</h3>
+            </div>
+        </div>
+
+        <div class="miniprojects">
+            <div class="ui stackable grid">
+                <div class="twelve wide column" id="theprojects">
+                    <div class="ui stackable grid">
+                        <div class="sixteen wide column dangerprojects" >
+                            <h1 class="workswell">Password Generator</h1>
+                            <h4>Select from the options below, and generate a random password! Must be between 8-128 chars.</h4>
+                            <div class="ui equal width form">
+                                
+                                  <div class=" field">
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='special' tabindex="0" class="hidden" value="spec">
+                                      <label>Special Char</label>
+                                    </div>
+                                
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='upper' tabindex="0" class="hidden" value="upper">
+                                      <label>Uppercase</label>
+                                    </div>
+                                 
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='lower' tabindex="0" class="hidden" value="lower">
+                                      <label>Lowercase</label>
+                                    </div>
+                                
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='numb' tabindex="0" class="hidden" value="numb">
+                                      <label>Numbers</label>
+                                    </div>
+                
+                                    
+                                  </div>
+                                  <div class="ui input">
+                                    <input type="text" id="length" placeholder="How many chars?">
+                                  </div>
+                                  <button class="ui primary button" type="submit" id="pswdsubmit">
+                                    Submit
+                                  </button>
+                    
+                              </div>
+                              <div id="pswdreturn">
+                                <h2>Your password!</h2>
+                                <h4 id="newpswd"></h4>
+                              </div>
+                        </div>
+                        <div class="sixteen wide column dangerprojects" >
+                            <h1 class="doesntWork">Some Fun APIs</h1>
+                            <h4>Select from the options below, and generate a random password! Must be between 8-128 chars.</h4>
+                            <div class="ui equal width form">
+                                
+                                  <div class=" field">
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='special' tabindex="0" class="hidden" value="spec">
+                                      <label>Special Char</label>
+                                    </div>
+                                
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='upper' tabindex="0" class="hidden" value="upper">
+                                      <label>Uppercase</label>
+                                    </div>
+                                 
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='lower' tabindex="0" class="hidden" value="lower">
+                                      <label>Lowercase</label>
+                                    </div>
+                                
+                                    <div class="ui toggle inverted checkbox">
+                                      <input type="checkbox" id='numb' tabindex="0" class="hidden" value="numb">
+                                      <label>Numbers</label>
+                                    </div>
+                
+                                    
+                                  </div>
+                                  <div class="ui input">
+                                    <input type="text" id="length" placeholder="How many chars?">
+                                  </div>
+                                  <button class="ui primary button" type="submit" id="pswdsubmit">
+                                    Submit
+                                  </button>
+                    
+                              </div>
+                              <div id="pswdreturn">
+                                <h2>Your password!</h2>
+                                <h4 id="newpswd"></h4>
+                              </div>
+                        </div>
+                        <div class="sixteen wide column dangerprojects" >
+                            <h1 class="doesntWork">Type Tester</h1>
+                            <h4>Generate a random string of 20 words and type them out as quickly as possible. <br>
+                            Words typed incorrectly will not count towards your score.</h4>
+                            <button class="ui primary button" type="submit" id="stringgenerate">
+                                Generate
+                            </button>
+                            <div class="generatedwords">
+                                
+                            </div>
+                            <div class="typetestinputdiv">
+                                <textarea class="typetestinput" placeholder="type here">
+
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="sixteen wide column dangerprojects" >
+                            <h1 class="doesntWork">A Simple JS Calculator</h1>
+                            <h4>Generate a random string of 20 words and type them out as quickly as possible. <br>
+                            Words typed incorrectly will not count towards your score.</h4>
+                            <div class="herocalculator">
+                                <div>
+                                    <textarea class="calcresults"></textarea>
+                                </div>
+                            <div class="ui stackable centered grid">
+                            <div class="four wide column" id="operation">
+                              <button class="ui massive icon button">
+                                <i class="ui redo icon"></i>
+                              </button>
+                            </div>
+                            <div class="four wide column" id="operation">
+                                <button class="ui massive icon button">
+                                    <i class="ui  icon"></i>
+                                  </button>
+                            </div>
+                            <div class="four wide column" id="operation">
+                                <button class="ui massive icon button">
+                                    <i class="ui  icon"></i>
+                                  </button>
+                            </div>
+                            <div class="four wide column" id="operation">
+                                <button class="ui massive icon button">
+                                    <i class="ui plus icon"></i>
+                                  </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">1
+                                </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">2
+                                </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">3
+                                </button>
+                            </div>
+                            <div class="four wide column">
+                                <button class="ui massive icon button">
+                                    <i class="ui minus icon"></i>
+                                  </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">4
+                                </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">5
+                                </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">6
+                                </button>
+                            </div>
+                            <div class="four wide column">
+                                <button class="ui massive icon button">
+                                    <i class="ui times icon"></i>
+                                  </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">7
+                                </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">8
+                                </button>
+                            </div>
+                            <div class="four wide column" id="calcnumber">
+                                <button class="circular massive ui button">9
+                                </button>
+                            </div>
+                            <div class="four wide column">
+                                <button class="ui massive icon button">
+                                    <i class="ui divide icon"></i>
+                                </button>
+                            </div>
+                            <div class="sixteen wide column">
+                                <button class="ui massive icon button" id="equalsbutton">
+                                    <i class="ui equals icon"></i>
+                                </button>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="sixteen wide column dangerprojects" >
+                            <a href="https://github.com/wagerfield/parallax"><h1 class="doesntWork">Parallax.js Library</h1></a>
+                            
+                            
+                        </div>
+                        <div class="sixteen wide column dangerprojects" >
+                            <h1 class="doesntWork">Clicker Game</h1>
+                            <div>
+                                <h2>Your Score!</h2>
+                                <h2 id="clickerScore"></h2>
+                                <button class="ui big circular button" id="clickerButton">Click <br> Me!</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column" id="showmethecode">
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
+    <script src="./script Assets/script.js"></script>
+    <script src="./script Assets/script2.js"></script>
+  </body>
+  </html>

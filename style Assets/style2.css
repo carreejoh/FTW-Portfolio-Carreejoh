@@ -1,0 +1,183 @@
+.wavess {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+  
+  @keyframes FlexA {
+    0% {
+      transform: skew(20deg, 0deg) scale3d(1.2, 1, 1);
+    }
+    100% {
+      transform: skew(0deg, 0deg) scale3d(2, 1, 1);
+    }
+  }
+  
+  @keyframes FlexB {
+    0% {
+      transform: skew(0deg, 0deg) scale3d(1.2, 1, 1);
+    }
+    100% {
+      transform: skew(0deg, 20deg) scale3d(2, 1, 1);
+    }
+  }
+  
+  @keyframes FlexC {
+    0% {
+      transform: skew(10deg, 10deg) scale3d(2, 1, 1);
+    }
+    100% {
+      transform: skew(0deg, 0deg) scale3d(1.2, 1, 1);
+    }
+  }
+  
+  .wave {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    right: -50px;
+    bottom: 0;
+    z-index: 2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+  }
+  
+  /* 
+  Out of sync but more sinous and weblike, 
+  cooler but not the effect we want probably for this design 
+  */
+  .wave-1 {
+    animation-name: FlexA;
+  }
+  
+  .wave-2 {
+    animation-name: FlexB;
+  }
+  
+  .wave-3 {
+    animation-name: FlexC;
+  }
+  
+  .wave-4 {
+    animation-name: FlexC;
+  }
+  
+  .wave-5 {
+    animation-name: FlexB;
+  }
+  
+  .wave-6 {
+    animation-name: FlexA;
+  }
+  
+  .wave-7 {
+    animation-name: FlexB;
+  }
+  
+  .wavesz {
+    z-index: 4;
+  }
+
+
+  /* Progress Bars Color */
+
+#example1 {
+    background-color: var(--lightpurple);
+}
+
+#example2 {
+    background-color: var(--lightpurple);
+}
+
+#example3 {
+    background-color: var(--lightpurple);
+}
+
+#example4 {
+    background-color: var(--lightpurple);
+}
+
+#example5 {
+    background-color: var(--lightpurple);
+}
+
+#example6 {
+    background-color: var(--lightpurple);
+}
+
+#example7 {
+    background-color: var(--lightpurple);
+}
+
+#example8 {
+    background-color: var(--lightpurple);
+}
+
+#example9 {
+    background-color: var(--lightpurple);
+}
+
+#example10 {
+    background-color: var(--lightpurple);
+}
+
+#barcolor {
+    background-color: var(--darkblue);
+}
+
+/* For changing background  */
+
+#purpletoblue {
+  background: linear-gradient(30deg, var(--lightpurple), 12%, var(--darkblue));
+}
+
+#greentoorange {
+  background:  linear-gradient(30deg, var(--lightblue), 12%, var(--darkblue));;
+}
+
+#whitetoblack {
+  background: linear-gradient(30deg, #434343, 40%, black);
+}
+
+#sandtoblue {
+  background: linear-gradient(30deg, #DECBA4, 40%, #3E5151);
+}
+
+/* For stars by "Connor" on codepen */
+.waves {
+  background-color: #434343;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
