@@ -75,7 +75,19 @@
     position: fixed;
 }
 
+#landingFlex {
+    padding-top: 20%;
+    padding-bottom: 10%;
+    width: 90%;
+    margin-left: 6%;
+}
 
+.countdownDiv {
+    color: white;
+    padding-left: 50%;
+    padding-top: 10%;
+    text-align: center;
+}
 
 .customsidecolor {
     color: #14A098;
@@ -84,7 +96,6 @@
 #homebutton {
     text-align: center;
 }
-
 
 
 #v1text {
@@ -104,9 +115,8 @@
     text-align: left;
     position: relative;
     z-index: 2;
-    width: 80%;
+    width: 100%;
     color: white;
-    padding: 10%;
     padding-top: 20%;
     padding-bottom: 22%;
 }
@@ -119,14 +129,13 @@
 }
 
 .tomy {
-    margin-top: 80%;
-    margin-left: 30%;
-    width: 100%;
+    position: relative;
+    padding-top: 20%;
 }
 
 .thanks {
-    margin-top: 100%;
-    margin-left: 30%;
+    margin-top: 37%;
+    margin-left: 1%;
     width: 100%;
 }
 
@@ -158,7 +167,7 @@
 
 .menucontrol {
     position: fixed;
-    padding-left: 2.5%;
+    padding-left: 1%;
     padding-top: 1.5%;
     z-index: 5;
 }
@@ -168,6 +177,25 @@
     background: linear-gradient(120deg, var(--darkblue), 15%, var(--darkblue));
     height: 100%;
 }
+
+#chessImg {
+    height: 335px;
+}
+
+.herocolumnpro {
+    border: solid 2px var(--darkgray);
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    color: var(--darkblue);
+}
+
+.herocolumnpro img:hover {
+    filter: grayscale(70%);
+} 
+
 
 /* Resume */
 
@@ -224,15 +252,6 @@
         text-shadow: 0px 0 , 0 0px var(--lightpurple), 0px 0 var(--lightpurple), 3px -2px var(--lightpurple);
     }
 
-    .herocolumnpro {
-        border: solid 2px var(--lightpurple);
-        border-radius: 10px;
-        background-color: white;
-        width: 100%;
-        height: 100%;
-        padding: 2%;
-        color: var(--darkblue);
-    }
 
     .herocolumnpro img {
         width: 100%;
@@ -295,7 +314,6 @@
 
   .theforbiddenzone {
     width: 100%;
-    height: 350px;
     text-align: center;
     color: white;
     background-color: #363636;
@@ -304,11 +322,15 @@
   }
 
   .zonetext {
-    width: 40%;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 25%;
     padding: 3%;
   }
 
   #forbiddenButton {
-    margin-top: 50px;
+    padding-top: 6%;
+  }
+
+  .construction {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.v6IKgF3rAcBzGb-28OH7cgHaAr%26pid%3DApi&f=1&ipt=695ae3d955ed18b24273ed5e4753e95e75c0e7ed655f4f65ec6b60cff0506b06&ipo=images');
   }

@@ -11,11 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&family=Roboto+Mono&family=Roboto:wght@800&family=Turret+Road:wght@500&display=swap" rel="stylesheet">
-    <script
-    src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-    crossorigin="anonymous"
-  ></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_utc)</script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css">
   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
@@ -77,7 +75,7 @@
       <div class="ui  top sidebar">
       <div class="ui inverted secondary menu" id="heromenu">
         <div class="item">
-          <a href="#welcomepara"><span class="ui huge text" id="carreelogo">Carreejoh<span id="v1textlogo">V3</span></span></a>
+          <a href="#landingHREF"><span class="ui huge text" id="carreelogo">Carreejoh<span id="v1textlogo">V3</span></span></a>
         </div>
       <div class="center menu">
         <div class="item">
@@ -105,104 +103,20 @@
       </div>
       </div>
     </div>
-        
-        
-        
-        
-        <!--
-        <div class=" right floated two wide column herocustomize">
-          <div class="ui grid">
-            <div class="ten wide column">
-              <h1 id="clockdisplay"></h1>
-            </div>  
-            <div class="six wide column">
-              <div class="ui icon top right pointing dropdown inverted button">
-                <i class="wrench icon"></i>
-                <div class="menu">
-                  <div class="header">Colors:</div>
-                  <div>
-                    <div class="ui four item horizontal list">
-                      <div class="item">
-                        <button class="circular ui icon large button" id="purpletoblue">
-  
-                        </button>
-                      </div>
-                      <div class="item">
-                        <button class="circular  ui icon large button" id="greentoorange">
-         
-                        </button>
-                      </div>
-                      <div class="item">
-                        <button class="circular ui icon large button" id="whitetoblack">
-
-                        </button>
-                      </div>
-                      <div class="item">
-                        <button class="circular ui icon large button" id="sandtoblue">
-
-                        </button>
-                      </div>
-                      
-                    </div>
-                  </div>
-
-                
-
-                  <div class="header">Theme:</div>
-                  <div>
-                    <div class="ui four item horizontal list">
-                    <div class="item">
-                      <button class="circular ui icon very small button">
-                        <i class="space shuttle icon"></i>
-                      </button>
-                    </div>
-                    <div class="item">
-                      <button class="circular ui icon very small button">
-                        <i class="yin yang icon"></i>
-                      </button>
-                    </div>
-                    <div class="item">
-                      <button class="circular ui icon very small button">
-                        <i class=" code icon"></i>
-                      </button>
-                    </div>
-                  
-                    
-                    </div>
-                  </div>
-
-
-
-
-                  <div class="header">Mini Waves:</div>
-                  <div class="ui mini toggle checkbox">
-                    <input type="checkbox" id="checkboxwaves">
-                    <label>Toggle</label>
-                  </div>
-                  <div class="ui divider"></div>
-                  <div class="item">Settings</div>
-           
-                </div>
-              </div>
-          </div>
-
-          </div>
-        </div>
-      -->
-    
      
  
       
 
  
-    <div class="landing">
+    <div class="landing" id="landingHREF">
       <div class="menucontrol">
         <button class="ui icon large inverted button sidebarbutton">
           <i class="bars icon"></i>
         </button>
       </div>
 
-      <div class="welcome" id="welcomepara" data-relative-input="true">
+      <div class="ui grid" id="landingFlex">
+      <div class="ui eight wide column welcome" id="welcomepara" data-relative-input="true">
         <div data-depth=".1">
         <span class="ui massive text">Welcome</span>
         </div>
@@ -217,7 +131,14 @@
           </div>
         </div>
       </div> 
-
+      
+      <div class="ui eight wide column">
+        <div class="countdownDiv">
+            <div><h1>Time Until Graduation:</h1></div>
+            <div><h1 id="countdownClock"></h1></div>
+        </div>
+      </div>
+      </div>
       <!--<div class="welcome">
         <span class="ui massive text" >Welcome</span><br>
         <span class="ui text" id="welcomeh2" >to my</span><span  class="ui huge text" id="v1colors"> V3 </span><span  class="ui huge text" id="welcomeh2">portfolio!</span></br>
@@ -503,12 +424,13 @@
             </div>
             <div class="eight wide column">
               <div class="herocolumnpro">
-                
+                <a href="chess.com"><img id="chessImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-5mKUCXGJhaY%2FXrFZypxYKkI%2FAAAAAAAAJyo%2F-ma_GL_4YFM546jLUZ4gW8xvvtaVMVEXACEwYBhgL%2Fw1200-h630-p-k-no-nu%2FChessdotcom1.png&f=1&nofb=1&ipt=4aac57aa3791f0d9ebbf69492a4fb7ee324a53a7ee598afb26b414a1e913be10&ipo=images"></a>
+                <p>I of course did not make this site, but it's an awesome filler.</p>
               </div>
             </div>
             <div class="five wide column">
               <div class="herocolumnpro">
-                
+                <h3>This section is lacking in content... <br>Have you checked out the mini-projects in <br> <a href="#forbidden">The Danger Zone?</a></h3>
               </div>
             </div>
             <div class="eleven wide column">
@@ -521,19 +443,25 @@
         </div>
       </div>
       
+      <div class="construction">e</div>
     <div class="theforbiddenzone" id="forbidden">
       <div class="zonetext">
-        <h1>Thanks for making it this far!</h1>
-        <h3>I truly do appreciate anyone that takes the time to view this site, however, from here on out the code can be slow, buggy, and might not work. Good Luck!</h3>
+        <h1>I'm glad you're here!</h1>
+        <h4>I appreciate you taking the time to view my portfolio and hope you've enjoyed it so far! This next section of the portfolio is my personal playground 
+            where I incorporate new ideas and concepts from bootcamp. It's still under construction so you may encounter some bugs, but those should be worked out quickly. Have fun!
+
+        </h4>
         <a id="forbiddenButton" href='./experimental.html'><button class="ui red huge inverted button">Danger Zone</button></a>
       </div>
     </div>
+    <div class="construction">e</div>
 
 </main>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
+    <script src="./libs/ysCountDown.js-master/ysCountDown.js-master/src/yscountdown.js"></script>
     <script src="./script Assets/script.js"></script>
-    <script src="./script Assets/script2.js"></script>
+    <script src="./script Assets/script2.es"></script>
   </body>
 </html>
