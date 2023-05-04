@@ -20,6 +20,12 @@ document.addEventListener("scroll", (event) => {
 })
 
 
+//For Danger Button
+
+$('#forbiddenButton').on('click touchstart', function() {
+  window.location.href='./experimental.html';
+});
+
 // For Clock
 
 setInterval(function() {
