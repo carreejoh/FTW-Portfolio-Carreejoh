@@ -111,3 +111,9 @@
 .workswell {
     color: green;
 }
+
+/* Chess.com Api */
+
+#chessReturn {
+    margin-top: 5%;
+}

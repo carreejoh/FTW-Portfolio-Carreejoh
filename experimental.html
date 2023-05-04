@@ -115,50 +115,27 @@
                               </div>
                         </div>
                         <div class="sixteen wide column dangerprojects" >
-                            <h1 class="doesntWork">Some Fun APIs</h1>
-                            <h4>Select from the options below, and generate a random password! Must be between 8-128 chars.</h4>
+                            <h1 class="doesntWork">Chess.com API</h1>
+                            <h4>Search any chess.com player to view their stats, and star their profile to save the data!</h4>
                             <div class="ui equal width form">
                                 
-                                  <div class=" field">
-                                    <div class="ui toggle inverted checkbox">
-                                      <input type="checkbox" id='special' tabindex="0" class="hidden" value="spec">
-                                      <label>Special Char</label>
-                                    </div>
-                                
-                                    <div class="ui toggle inverted checkbox">
-                                      <input type="checkbox" id='upper' tabindex="0" class="hidden" value="upper">
-                                      <label>Uppercase</label>
-                                    </div>
-                                 
-                                    <div class="ui toggle inverted checkbox">
-                                      <input type="checkbox" id='lower' tabindex="0" class="hidden" value="lower">
-                                      <label>Lowercase</label>
-                                    </div>
-                                
-                                    <div class="ui toggle inverted checkbox">
-                                      <input type="checkbox" id='numb' tabindex="0" class="hidden" value="numb">
-                                      <label>Numbers</label>
-                                    </div>
-                
-                                    
-                                  </div>
                                   <div class="ui input">
-                                    <input type="text" id="length" placeholder="How many chars?">
+                                    <input type="text" id="length" placeholder="Chess.com Username">
                                   </div>
-                                  <button class="ui primary button" type="submit" id="pswdsubmit">
+                                  <button class="ui primary button" type="submit" id="chessSubmit">
                                     Submit
                                   </button>
                     
-                              </div>
-                              <div id="pswdreturn">
-                                <h2>Your password!</h2>
-                                <h4 id="newpswd"></h4>
+                            </div>
+                              <div id="chessReturn">
+                                <h2 id="chessUsername"></h2>
+                                <h4 id="chessStats"></h4>
                               </div>
                         </div>
                         <div class="sixteen wide column dangerprojects" >
                             <h1 class="doesntWork">Type Tester</h1>
                             <h4>Generate a random string of 20 words and type them out as quickly as possible. <br>
-                            Words typed incorrectly will not count towards your score.</h4>
+                            Words typed incorrectly will not count towards your score. Press enter to finish the clock.</h4>
                             <button class="ui primary button" type="submit" id="stringgenerate">
                                 Generate
                             </button>
@@ -289,5 +266,6 @@
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
     <script src="./script Assets/script.js"></script>
     <script src="./script Assets/script2.es"></script>
+    <script src="./script Assets/dangerScript.js"></script>
   </body>
   </html>

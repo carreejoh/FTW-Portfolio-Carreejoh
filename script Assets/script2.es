@@ -1,7 +1,7 @@
 // For Stretch Animation
   
 var scene = document.getElementById("welcomepara");
-var parallaxw = new Parallax(scene);
+// var parallaxw = new Parallax(scene);
 
 // import duration from 'dayjs/plugin/relativeTime';
 

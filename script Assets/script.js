@@ -188,6 +188,22 @@ $('.ui.dropdown')
     $('.generatedwords').text(newList.replace(/,/g,''));
   })
 
+  $('.typetestinput').on('keypress', function(e) {
+    if(e.which == 13) {
+      alert('YOu pressed Enter');
+    }
+  })
+
+  
+  // $('.typetestinput').keydown((event) => {
+  //   event.preventDefault();
+  //   let counter = 0;
+  //   setInterval(
+  //     counter + 1,
+  //   1000)
+
+  // })
+
   // $('.typetestinput').keydown(console.log("keydownworks"))
 
 
@@ -200,19 +216,31 @@ $('.ui.dropdown')
   // For Clicker Game
   
 
-  $('#clickerButton').click(function(event) {
-    event.preventDefault();
-    setInterval(function() {
-      var clickerscore = 0;
-      if($('#clickerButton').click(function() {
-        clickerscore + 1
-        console.log(clickerscore);
-      }) ) {
-      } else {
-        $('#clickerScore').text(clickerscore);
-      }
-    }, 2000);
+  // $('#clickerButton').click(function(event) {
+  //   event.preventDefault();
+  //   setInterval(function() {
+  //     var clickerscore = 0;
+  //     if($('#clickerButton').click(function() {
+  //       clickerscore + 1
+  //       console.log(clickerscore);
+  //     }) ) {
+  //     } else {
+  //       $('#clickerScore').text(clickerscore);
+  //     }
+  //   }, 2000);
 
     
 
-  })
+  // })
+
+
+window.addEventListener("resize", function() {
+  if(this.window.innerWidth <= 500) {
+    $('#largeSidebar').attr("style", "display:none");
+    $('#smallSidebar').addClass("visible");
+  } else if (this.window.innerWidth >= 500) {
+    $('#largeSidebar').attr("style", "display:block");
+    $('#smallSidebar').removeClass("visible");
+  }
+})
+

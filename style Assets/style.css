@@ -67,6 +67,7 @@
 
 .sidebar {
     background-color: rgb(46, 38, 129, .98);
+
 }
 
 #customsidebar {
@@ -171,7 +172,38 @@
     padding-top: 1.5%;
     z-index: 5;
 }
+
+/* FLEX MENU*/
+
+#smallSidebar {
+    background-color: var(--darkgray);
+    padding-top: 4%;
+    padding-bottom: 15%;
+    width: 100%;
+    text-align: center;
+    z-index: 7;
+}
+
+
+#carreelogosmall {
+    font-size: 30px;
+    color: white;
+}
+
+#v1textlogosmall {
+    font-size: 30px;
+    text-shadow: 0px 0 , 0 0px var(--lightpurple), 0px 0 var(--lightpurple), 3px -3px var(--lightpurple);
+    color: var(--lightblue);
+}
+
+#smallMenu {
+    
+}
+
 /* Projects */
+
+
+
 
 .wavebackground {
     background: linear-gradient(120deg, var(--darkblue), 15%, var(--darkblue));
@@ -334,3 +366,34 @@
   .construction {
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.v6IKgF3rAcBzGb-28OH7cgHaAr%26pid%3DApi&f=1&ipt=695ae3d955ed18b24273ed5e4753e95e75c0e7ed655f4f65ec6b60cff0506b06&ipo=images');
   }
+
+
+  @media screen and (max-width: 700px) {
+    #resumecolor {
+        padding: 0%;
+    }
+    .resume {
+        padding: 2%;
+    }
+    #profilepic {
+        display: none;
+    }
+ 
+  } 
+
+
+  /*
+
+  @media screen and (min-width: 741px) {
+    .sidebar {
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+    .sidebar {
+        display: none;
+    }
+  }
+
+  
