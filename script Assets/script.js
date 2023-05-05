@@ -1,4 +1,12 @@
-$('.sidebar').first()
+$('.smallSidebar').first()
+.sidebar('attach events', '.mobileLandingCall')
+.sidebar('setting', 'transition', 'overlay')
+;
+$('.mobileLandingCall')
+.removeClass('disabled')
+;
+
+$('#largeSidebar').first()
    .sidebar('attach events', '.sidebarbutton')
   .sidebar('setting', 'transition', 'overlay')
  ;
@@ -6,13 +14,7 @@ $('.sidebar').first()
    .removeClass('disabled')
  ;
 
- $('.smallSidebar').first()
- .sidebar('attach events', '.mobileLandingCall')
-.sidebar('setting', 'transition', 'overlay')
-;
-$('.mobileLandingCall')
- .removeClass('disabled')
-;
+
 
 
 
@@ -251,6 +253,8 @@ let checkView = function() {
     $('.landingMobile').attr("style", "display:block");
     $('.resumeSmall').attr("style", "display:block");
     $('.resume').attr("style", "display:none");
+    $('.projects').attr("style", "display:none");
+    $('.projectsSmall').attr("style", "display:block");
   } else if (this.window.innerWidth >= 500) {
     $('#largeSidebar').attr("style", "display:block");
     $('#smallSidebar').removeClass("visible");
@@ -258,6 +262,8 @@ let checkView = function() {
     $('.landingMobile').attr("style", "display:none");
     $('.resumeSmall').attr("style", "display:none");
     $('.resume').attr("style", "display:block");
+    $('.projectsSmall').attr("style", "display:none");
+    $('.projects').attr("style", "display:block");
   }
 }
 

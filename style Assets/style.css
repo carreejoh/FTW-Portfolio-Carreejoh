@@ -197,9 +197,13 @@ body {
     color: #106b77;
 }
 
-#smallMenu {
-    width: 85%;
-    margin-left: 7.5%;
+.mobileMenuBtn {
+    background-color: var(--darkgray);
+
+}
+
+#smallNavigation {
+    color: white;
 }
 
 /* For Mobile Landing */
@@ -295,6 +299,11 @@ body {
     filter: grayscale(70%);
 } 
 
+/* Small Projects */
+
+.projectsSmall {
+    background-image: linear-gradient(-60deg, var(--lightpurple), 12%, var(--darkblue));
+}
 
 /* Resume */
 
