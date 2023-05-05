@@ -19,5 +19,6 @@ var myCountDown = new ysCountDown(graduation, function(remaining, finished) {
         console.log("you made it my friend");
     } else {
         $('#countdownClock').text(remaining.totalDays + "D " + remaining.hours + "H " + remaining.minutes + "M " + remaining.seconds + "S ");
+        $('#countdownClockSmall').text(remaining.totalDays + "D " + remaining.hours + "H " + remaining.minutes + "M " + remaining.seconds + "S ");
     }
 })

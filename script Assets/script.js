@@ -1,7 +1,6 @@
 $('.sidebar').first()
    .sidebar('attach events', '.sidebarbutton')
   .sidebar('setting', 'transition', 'overlay')
-  .sidebar('toggle')
  ;
  $('.sidebarbutton')
    .removeClass('disabled')
