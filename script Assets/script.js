@@ -7,6 +7,9 @@ $('.sidebar').first()
    .removeClass('disabled')
  ;
 
+ $('.ui.dropdown')
+ .dropdown()
+;
 
 // For On Scroll Menu
 
@@ -51,9 +54,6 @@ $('#example10').progress("complete", (true));
 
 // For Countdown Clock
 
-$('.ui.dropdown')
-  .dropdown()
-;
 
 
 
@@ -240,13 +240,21 @@ $('.ui.dropdown')
   // })
 
 
-window.addEventListener("resize", function() {
+
+
+let checkView = function() {
   if(this.window.innerWidth <= 500) {
     $('#largeSidebar').attr("style", "display:none");
     $('#smallSidebar').addClass("visible");
+    $('.landingContent').attr("style", "display:none");
+    $('.landingMobile').attr("style", "display:block");
   } else if (this.window.innerWidth >= 500) {
     $('#largeSidebar').attr("style", "display:block");
     $('#smallSidebar').removeClass("visible");
+    $('.landingContent').attr("style", "display:block");
+    $('.landingMobile').attr("style", "display:none");
   }
-})
+}
 
+window.addEventListener("resize", checkView);
+window.addEventListener('load', checkView);

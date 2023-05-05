@@ -4,3 +4,7 @@ $('#chessSubmit').click(
         console.log(data);
     })
 )
+
+$('.ui.dropdown')
+  .dropdown()
+;

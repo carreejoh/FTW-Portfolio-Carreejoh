@@ -110,6 +110,7 @@
 .landing {
     width: 100%;
     background-size: 100%;
+    background-image: url('../imgs/background\ image\ merge\ 4.png');
 }
 
 .welcome {
@@ -181,7 +182,6 @@
     padding-bottom: 4%;
     width: 100%;
     text-align: center;
-    z-index: 7;
 }
 
 
@@ -194,6 +194,20 @@
     font-size: 30px;
     text-shadow: 0px 0 , 0 0px var(--lightpurple), 0px 0 var(--lightpurple), 3px -3px var(--lightpurple);
     color: var(--lightblue);
+}
+
+
+/* For Mobile Landing */
+.landingMobile {
+    margin-top: 5%;
+    padding: 4%
+
+}
+
+#landingMTest {
+    margin-top: 8%;
+    font-size: 50px;
+    text-align: center;
 }
 
 
