@@ -6,6 +6,16 @@ $('.sidebar').first()
    .removeClass('disabled')
  ;
 
+ $('.smallSidebar').first()
+ .sidebar('attach events', '.mobileLandingCall')
+.sidebar('setting', 'transition', 'overlay')
+;
+$('.mobileLandingCall')
+ .removeClass('disabled')
+;
+
+
+
  $('.ui.dropdown')
  .dropdown()
 ;
