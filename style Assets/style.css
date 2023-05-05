@@ -285,9 +285,6 @@ body {
     padding: 10%;
 }
 
-.masteredtext {
-    color: #0F292F;
-}
 
 .herocolumn {
     border: solid 2px var(--darkgray);
@@ -314,6 +311,29 @@ body {
     width: 100%;
     padding: 10%;
 }
+
+#carousel {
+    border: solid 3px black;
+    border-width: 3px 0px 3px 0px;
+}
+
+#carouselImg {
+    width: 110px;
+}
+
+#carouselImgReact {
+    width: 70px;
+}
+
+#carouselImgAWS {
+    height: 50px;
+}
+
+#progressSmall {
+    background-color: var(--darkgray);
+}
+
+
 
  /* Projects  */
 

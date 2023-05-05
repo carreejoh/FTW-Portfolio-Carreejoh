@@ -10,6 +10,9 @@ $('.sidebar').first()
  .dropdown()
 ;
 
+// For slide 
+
+
 // For On Scroll Menu
 
 document.addEventListener("scroll", (event) => {
@@ -37,17 +40,7 @@ setInterval(function() {
 
 // For Skill Bars
 
-$('#example1').progress();
-$('#example2').progress();
-$('#example3').progress();
-$('#example4').progress();
-$('#example5').progress();
-$('#example6').progress();
-$('#example7').progress();
-$('#example8').progress();
-$('#example9').progress();
-$('#example10').progress("complete", (true));
-
+$('.progress').progress();
 
 
 
@@ -57,10 +50,9 @@ $('#example10').progress("complete", (true));
 
 
 
-// For "Show Me" Section
-// $('.menu .item')
-//   .tab()
-// ;
+// For Slide
+
+
 
 // For changing backgrounds 
 

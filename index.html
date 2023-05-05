@@ -16,6 +16,13 @@
     <script>dayjs.extend(window.dayjs_plugin_utc)</script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js
+"></script>
   <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js"></script>
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
   </head>
@@ -449,12 +456,9 @@
     <div class="resumeSmall">
       
       <div class="ui stackable grid" id="resumecolor">
-        <div class="sixteen wide column">
-          <span class="ui huge text" id="v1resume">Resume </span>
-        </div>
         <div class="thirteen wide column">
           <div class=>
-          <h1>About Me:</h1>
+          <h3>About Me:</h3>
             <p>I've lived in Utah for a majority of my life, and if I'm not doing homework or school you can catch me
                snowboarding, running some chess, or playing video games. Growing up I was always fascinated with engineering,
                and I took this passion to the University of Utah, where I discovered Python and my love of coding. 
@@ -464,102 +468,54 @@
         </div>
         
         
-        <div class="eleven wide column" id="skills">
+        <div class="eleven wide column" id="skillsSmall">
           <div class="">
-          <h1>Skills I've Mastered</h1>
-                  <div class="ui small green progress" data-percent="98" id="example1">
-                    <div class="bar" id="barcolor"></div>
+          <h3>Skills I've Mastered</h3>
+                  <div class="ui tiny green progress" data-percent="98" id="progressSmall">
+                    <div class="bar" id="barcolorGood"></div>
                     <div class="label"><p>HTML-5 98%</p></div>
                   </div>
-                  <div class="ui small  purple progress" data-percent="94" id="example2">
-                    <div class="bar" id="barcolor"></div>
+                  <div class="ui tiny  green progress" data-percent="94" id="progressSmall">
+                    <div class="bar" id="barcolorGood"></div>
                     <div class="label"><p>CSS 94%</p></div>
                   </div>
-                  <div class="ui small  green progress" data-percent="93" id="example3">
-                    <div class="bar" id="barcolor"></div>
-                    <div class="label"><p>Frameworks 93%</p></div>
+                  <div class="ui tiny  green progress" data-percent="84" id="progressSmall">
+                    <div class="bar" id="barcolorGood"></div>
+                    <div class="label"><p>Github 84%</p></div>
                   </div>
-                  <div class="ui small  green progress" data-percent="84" id="example5">
+                  <h3>Skills I'm Learning</h3>
+                  <div class="ui tiny  yellow progress" data-percent="78" id="progressSmall">
                     <div class="bar" id="barcolor"></div>
-                    <div class="label"><p>JavaScript 84%</p></div>
+                    <div class="label"><p>JavaScript 78%</p></div>
                   </div>
-                  <div class="ui small  green progress" data-percent="78" id="example6">
+                  <div class="ui tiny  yellow progress" data-percent="70" id="progressSmall">
                     <div class="bar" id="barcolor"></div>
-                    <div class="label"><p>APIs 78%</p></div>
+                    <div class="label"><p>Node.js 70%</p></div>
                   </div>
-                  <div class="ui small  green progress" data-percent="78" id="example7">
+                  <div class="ui tiny  yellow progress" data-percent="60" id="progressSmall">
                     <div class="bar" id="barcolor"></div>
-                    <div class="label"><p>jQuery 78%</p></div>
-                  </div>
-                  <div class="ui small  yellow progress" data-percent="74" id="example9">
-                    <div class="bar" id="barcolor"></div>
-                    <div class="label"><p>GitHub 74%</p></div>
+                    <div class="label"><p>SQL 60%</p></div>
                   </div>
                   </div>
                 </div>
             
-                <div class="five wide column">
-                  <div class="herocolumn">
-                  <h1>The Future...</h1>
-                  <div class="ui segment">
-                    <div class="ui relaxed divided list">
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">Node.JS</span></div>
-                        </div>
+                <h3>The Future</h3>
+                <div class="five wide column" id="carousel">
+                  <div class="splide" data-splide='{"type":"loop","perPage":2}'>
+                    <div class="splide__slider">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide"><img id="carouselImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Fthumbs%2F2x%2Fnodejs-1-logo.png&f=1&nofb=1&ipt=d9a9211cbd553c1c06c45ba757a33eca4e2529af4e914d340757e60dfdece5a6&ipo=images"></li>
+                          <li class="splide__slide"><img id="carouselImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdb%2F76%2F72%2Fdb767259a291c24ce95816fac91fdd94.png&f=1&nofb=1&ipt=fe08b8eba9bb0e3797442d108a9a136144ff62a9e9a0099947ccba624ee0823e&ipo=images"></li>
+                          <li class="splide__slide"><img id="carouselImgReact" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1&ipt=78caf21c81ecbe97c3f6827463caa748f47288ab25b4ac8b9a36dac574661b8d&ipo=images"></li>
+                          <li class="splide__slide"><img id="carouselImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ideematic.com%2Fwp-content%2Fuploads%2F2018%2F02%2Fmongodb-logo.png&f=1&nofb=1&ipt=537bf38bc3f3cca81dcf7d0d9f518911dc79a9e19338d7aa97919bff7a37af68&ipo=images"></li>
+                          <li class="splide__slide"><img id="carouselImgAWS" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.datacubed.com%2Fwp-content%2Fuploads%2F2020%2F03%2FAWS-Logo-small-300x180.png&f=1&nofb=1&ipt=6a664de9755f3fe18181c68cddc71f484a7c5281c396851e79b7be0c7a2315a2&ipo=images"></li>
+                        </ul>
                       </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">TypeScript</span></div>
-                          <div><span class="ui text medium"></span></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">PHP</span></div>
-                          <div><span class="ui text medium"><p id="clockdisplay"></p></span></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">SQL</span></div>
-                          <div><span class="ui text medium"><p class="clockdisplay"></p></span></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">React.js</span></div>
-                          <div><span class="ui text medium"><p class="clockdisplay"></p></span></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">MongoDB</span></div>
-                          <div><span class="ui text medium"><p class="clockdisplay"></p></span></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">AWS</span></div>
-                          <div><span class="ui text medium"><p class="clockdisplay"></p></span></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">Poodle</span></div>
-                          <div><span class="ui text medium"><p class="clockdisplay"></p></span></div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row content rowflex">
-                          <div><span class="ui text large">Graduation!</span></div>
-                          <div><span class="ui text medium"><p class="clockdisplay"></p></span></div>
-                        </div>
-                      </div>
+                    </div>
+                  </div>
                 </div>
-        </div>
-        </div>
-      </div>
+
       <div class="four wide column">
         <div class="herocolumn">
         <h1>Work History:</h1>
