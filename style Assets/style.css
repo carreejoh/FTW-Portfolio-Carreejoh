@@ -16,9 +16,8 @@
 
 /* For Custom Menu */
 
-.main1 {
+body {
     background-image: url('../imgs/background\ image\ merge\ 4.png');
-    background-size: 100%;
 }
 
 #experimental {
@@ -179,8 +178,8 @@
 /* FLEX MENU*/
 
 #smallSidebar {
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 2%;
     width: 100%;
     text-align: center;
 }
@@ -198,14 +197,17 @@
 }
 
 #smallMenu {
-    width: 90%;
-    margin-left: 5%;
+    width: 85%;
+    margin-left: 7.5%;
+    background-color: var(--darkgray);
+    border: solid 2px white;
+    border-radius: 10px;
 }
 
 /* For Mobile Landing */
 .landingMobile {
     padding-top: 70%;
-    padding-bottom: 70%;
+    padding-bottom: 35%;
     background-image: linear-gradient(30deg, var(--lightpurple), 12%, var(--darkblue));
 }
 
@@ -223,8 +225,8 @@
 .countdownSmall {
     margin-left: 25%;
     width: 50%;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin-top: 40%;
     text-align: center;
     background-color: var(--darkgray);
@@ -232,6 +234,13 @@
     border-radius: 10px;
 }
 
+#welcomeWelcome {
+    font-size: 42px;
+}
+
+#welcomeSub {
+    font-size: 30px;
+}
 
 /* Projects */
 
@@ -297,6 +306,13 @@
 
 #v1resume {
     color: white;
+}
+
+
+/* Resume Small */
+.resumeSmall {
+    width: 100%;
+    padding: 10%;
 }
 
  /* Projects  */

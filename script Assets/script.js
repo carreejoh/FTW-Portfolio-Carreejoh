@@ -247,13 +247,18 @@ let checkView = function() {
     $('#smallSidebar').addClass("visible");
     $('.landingContent').attr("style", "display:none");
     $('.landingMobile').attr("style", "display:block");
+    $('.resumeSmall').attr("style", "display:block");
+    $('.resume').attr("style", "display:none");
   } else if (this.window.innerWidth >= 500) {
     $('#largeSidebar').attr("style", "display:block");
     $('#smallSidebar').removeClass("visible");
     $('.landingContent').attr("style", "display:block");
     $('.landingMobile').attr("style", "display:none");
+    $('.resumeSmall').attr("style", "display:none");
+    $('.resume').attr("style", "display:block");
   }
 }
 
 window.addEventListener("resize", checkView);
 window.addEventListener('load', checkView);
+
