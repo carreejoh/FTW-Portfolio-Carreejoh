@@ -37,7 +37,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
           </div>
         <div class="center menu">
           <div class="item">
-            <a id="menubtn" href="#v1resume"><button class="ui inverted medium button">Resume</button></a>
+            <a id="menubtn" href="#v1resume"><button class="ui inverted medium button">About Me</button></a>
           </div>
           <div class="item">
             <a id="menubtn" href="#skills"><button class="ui inverted medium button">Skills</button></a>
@@ -46,17 +46,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
             <a id="menubtn" href="#projects"><button class="ui inverted medium button">Projects</button></a>
           </div>
           <div class="item">
+            <a id="menubtn" href="#projects"><button class="ui inverted medium button">Contact</button></a>
+          </div>
+          <div class="item">
             <button class="ui inverted medium button"><a href="#forbidden" id="experimental">Experimental</a></button>
           </div>
         </div>
         <div class="right menu">
           <div class="item">
             <p id="clockdisplay"></p>
-          </div>
-          <div class="item">
-            <div class="ui icon inverted button">
-              <i class="wrench icon"></i>
-            </div>
           </div>
         </div>
         </div>
@@ -144,11 +142,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
       <div class="ui grid" id="landingFlex">
       <div class="ui eight wide column welcome" id="welcomepara" data-relative-input="true">
         <div data-depth=".1">
-        <span class="ui massive text">Welc</span>
+        <span class="ui massive text">Welcome</span>
         </div>
         <div data-depth=".15">
-          <div class="tomy">
-          <span class="ui text" id="welcomeh2" >to my</span><span  class="ui huge text" id="v1colors"> V3 </span><span  class="ui huge text" id="welcomeh2">sdf</span>
+          <div>
+          <span class="ui text" id="welcomeh2" >to my</span><span  class="ui huge text" id="v1colors"> V3 </span><span  class="ui huge text" id="welcomeh2">portfolio</span>
           </div>
         </div>
         <div data-depth=".1">
@@ -157,7 +155,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
           </div>
         </div>
       </div> 
-      
       <div class="ui eight wide column">
         <div class="countdownDiv">
             <div><h1>Time Until Graduation:</h1></div>
@@ -165,6 +162,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
         </div>
       </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="massiveLandingWave"><path fill="#2E266D" fill-opacity="1" d="M0,224L48,202.7C96,181,192,139,288,117.3C384,96,480,96,576,128C672,160,768,224,864,224C960,224,1056,160,1152,149.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </div>
   </div>
 
@@ -201,7 +199,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
     
   
 
-    <div class="resume">
+    <!--<div class="resume">
       
       <div class="ui stackable grid" id="resumecolor">
         <div class="sixteen wide column">
@@ -463,8 +461,118 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
         </div>
       </div>
     </div>
+    </div>-->
+    <div class="resume">
+      
+      <div class="ui stackable grid" id="resumecolor">
+        <div class="sixteen wide column">
+          <span class="ui huge text" id="v1resume">About Me: </span>
+        </div>
+  
+        <div class="sixteen wide column">
+          <div class="herocolumn">
+          <h1>About Me:</h1>
+            <p>I've lived in Utah for a majority of my life, and if I'm not doing homework or school you can catch me
+               snowboarding, running some chess, or playing video games. Growing up I was always fascinated with engineering,
+               and I took this passion to the University of Utah, where I discovered Python and my love of coding. 
+               I quickly fell out of love for traditional college, and decided to tryout a coding bootcamp. 
+              This bootcamp has been nothing short of amazing and I truly feel like I'm thriving in this 
+              learning environment. I'm excited to graduate, get a job, and see where life takes me.
+            </p>
+            </div>
+        </div>
+        
+        
+        <div class="sixteen wide column" id="skills">
+          <div class="herocolumn">
+          <h1>Skills I've Mastered</h1>
+          <div class="ui tiny green progress" data-percent="98" id="progressSmall">
+            <div class="bar" id="barcolorGood"></div>
+            <div class="label"><p>HTML-5 98%</p></div>
+          </div>
+          <div class="ui tiny  green progress" data-percent="94" id="progressSmall">
+            <div class="bar" id="barcolorGood"></div>
+            <div class="label"><p>CSS 94%</p></div>
+          </div>
+          <div class="ui tiny  green progress" data-percent="84" id="progressSmall">
+            <div class="bar" id="barcolorGood"></div>
+            <div class="label"><p>Github 84%</p></div>
+          </div>
+          <h1>Skills I'm Learning</h1>
+          <div class="ui tiny  yellow progress" data-percent="78" id="progressSmall">
+            <div class="bar" id="barcolor"></div>
+            <div class="label"><p>JavaScript 78%</p></div>
+          </div>
+          <div class="ui tiny  yellow progress" data-percent="70" id="progressSmall">
+            <div class="bar" id="barcolor"></div>
+            <div class="label"><p>Node.js 70%</p></div>
+          </div>
+          <div class="ui tiny  yellow progress" data-percent="60" id="progressSmall">
+            <div class="bar" id="barcolor"></div>
+            <div class="label"><p>SQL 60%</p></div>
+          </div>
+          </div>
+                  
+                </div>
+            
+                <div class="sixteen wide column">
+                  <div class="herocolumn">
+                  <h1>The Future...</h1>
+                  <div class="five wide column" id="carousel">
+                    <div class="splide" data-splide='{"type":"loop","perPage":5}'>
+                      <div class="splide__slider">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img id="carouselImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Fthumbs%2F2x%2Fnodejs-1-logo.png&f=1&nofb=1&ipt=d9a9211cbd553c1c06c45ba757a33eca4e2529af4e914d340757e60dfdece5a6&ipo=images"></li>
+                            <li class="splide__slide"><img id="carouselImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fdb%2F76%2F72%2Fdb767259a291c24ce95816fac91fdd94.png&f=1&nofb=1&ipt=fe08b8eba9bb0e3797442d108a9a136144ff62a9e9a0099947ccba624ee0823e&ipo=images"></li>
+                            <li class="splide__slide"><img id="carouselImgReact" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1&ipt=78caf21c81ecbe97c3f6827463caa748f47288ab25b4ac8b9a36dac574661b8d&ipo=images"></li>
+                            <li class="splide__slide"><img id="carouselImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ideematic.com%2Fwp-content%2Fuploads%2F2018%2F02%2Fmongodb-logo.png&f=1&nofb=1&ipt=537bf38bc3f3cca81dcf7d0d9f518911dc79a9e19338d7aa97919bff7a37af68&ipo=images"></li>
+                            <li class="splide__slide"><img id="carouselImgAWS" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.datacubed.com%2Fwp-content%2Fuploads%2F2020%2F03%2FAWS-Logo-small-300x180.png&f=1&nofb=1&ipt=6a664de9755f3fe18181c68cddc71f484a7c5281c396851e79b7be0c7a2315a2&ipo=images"></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+  
+      <div class="sixteen wide column">
+        <div class="herocolumn">
+          <h1>Contact Me:</h1>
+          <div class="ui horizontal relaxed list">
+            <div class="item">
+              <div class="content">
+                <span class="ui text medium"><i class="envelope square large icon" style="visibility: visible;"></i>Carreejoh4637@mailbox.org</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <span class="ui text medium"><i class="phone square alternate large icon" style="visibility: visible;"></i>1-801-703-0816</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <span class="ui text medium"><a href="https://github.com/carreejoh"><i class="github large icon" style="visibility: visible;"></i></a>Carreejoh</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <span class="ui text medium"><a href="https://www.linkedin.com/in/carter-johnson-080318266/"><i class="linkedin large icon" style="visibility: visible;"></i></a>Carter Johnson</span>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <span class="ui text medium"><a href="https://twitter.com/carreejoh6"><i class="twitter square large icon" style="visibility: visible;"></i></a>Carreejoh6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
+   
+   
     <div class="resumeSmall">
       
       <div class="ui stackable grid" id="resumecolor">
@@ -573,63 +681,68 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
 
 
 
-
+    <div class="massiveProjectsWave">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2E266D" fill-opacity="1" d="M0,192L34.3,208C68.6,224,137,256,206,229.3C274.3,203,343,117,411,96C480,75,549,117,617,128C685.7,139,754,117,823,112C891.4,107,960,117,1029,138.7C1097.1,160,1166,192,1234,192C1302.9,192,1371,160,1406,144L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
       <div class="projects" id="projects">
         <div class="ui stackable grid ">
           <div class="sixteen wide column">
           <span class="ui huge white text" id="v1resume">Projects</span>
           </div>
-            <div class="eight wide column">
+            <div class="twelve wide column">
               <div class="herocolumnpro">
+                <p>Space Cowboys Travel</p>
                 <a href="https://dannyl2131.github.io/Space-cowboys-travel/"><img src="./imgs/spacecowboys.PNG"></a>
-                <p>Space Cowboys Travel: Learn about the upcoming weather and events in a given city!</p>
+                
               </div>
             </div>
-            <div class="eight wide column">
-              <div class="herocolumnpro">
-                <a href="chess.com"><img id="chessImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-5mKUCXGJhaY%2FXrFZypxYKkI%2FAAAAAAAAJyo%2F-ma_GL_4YFM546jLUZ4gW8xvvtaVMVEXACEwYBhgL%2Fw1200-h630-p-k-no-nu%2FChessdotcom1.png&f=1&nofb=1&ipt=4aac57aa3791f0d9ebbf69492a4fb7ee324a53a7ee598afb26b414a1e913be10&ipo=images"></a>
-                <p>I of course did not make this site, but it's an awesome filler.</p>
+            <div class="four wide column">
+              <div class="projectsMassive">
+                <h3>My role in making this site work was developing the JavaScript to fetch data from the "TicketMaster" API, and parse through the relevant data.
+                  I was also in charge of creating the local storage feature to save "favorites", so they could be viewed later.
+                </h3>
               </div>
             </div>
-            <div class="five wide column">
-              <div class="herocolumnpro">
-                <h3>This section is lacking in content... <br>Have you checked out the mini-projects in <br> <a href="#forbidden">The Danger Zone?</a></h3>
+            <div class="four wide column">
+              <div class="projectsMassive">
+                <h3>This code was designed to create a simple svg logo based upon input using the npm inquirer package. This homework was designed to 
+                  test the classes knowledge of OOP, inquirer, NPM, and classes.
+                </h3>
               </div>
             </div>
-            <div class="eleven wide column">
+            <div class="twelve wide column">
               <div class="herocolumnpro">
-                <canvas class="webgl">
-
-                </canvas>
+                <p>SVG logo maker</p>
+                <a href="https://github.com/carreejoh/SVG-Logo-Generator"><img id="chessImg" src="./imgs/svg logo maker pic.png"></a>
+                
               </div>
             </div>
         </div>
       </div>
+      </div>
 
       <div class="projectsSmall" >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,192L34.3,208C68.6,224,137,256,206,229.3C274.3,203,343,117,411,96C480,75,549,117,617,128C685.7,139,754,117,823,112C891.4,107,960,117,1029,138.7C1097.1,160,1166,192,1234,192C1302.9,192,1371,160,1406,144L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
-        <div class="ui stackable grid ">
-          <div class="sixteen wide column">
-          </div>
+        <svg xmlns="http://www.w3.org/2000/svg" id="projectWave" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,192L34.3,208C68.6,224,137,256,206,229.3C274.3,203,343,117,411,96C480,75,549,117,617,128C685.7,139,754,117,823,112C891.4,107,960,117,1029,138.7C1097.1,160,1166,192,1234,192C1302.9,192,1371,160,1406,144L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+        <div class="ui stackable grid " id="projectsContainer">
+          <h3>Projects:</h3>
             <div class="eight wide column">
-              <div class="herocolumnpro">
+              <div class="herocolumnproSmall">
                 <a href="https://dannyl2131.github.io/Space-cowboys-travel/"><img src="./imgs/spacecowboys.PNG"></a>
                 <p>Space Cowboys Travel: Learn about the upcoming weather and events in a given city!</p>
               </div>
             </div>
             <div class="eight wide column">
-              <div class="herocolumnpro">
+              <div class="herocolumnproSmall">
                 <a href="chess.com"><img id="chessImg" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-5mKUCXGJhaY%2FXrFZypxYKkI%2FAAAAAAAAJyo%2F-ma_GL_4YFM546jLUZ4gW8xvvtaVMVEXACEwYBhgL%2Fw1200-h630-p-k-no-nu%2FChessdotcom1.png&f=1&nofb=1&ipt=4aac57aa3791f0d9ebbf69492a4fb7ee324a53a7ee598afb26b414a1e913be10&ipo=images"></a>
                 <p>I of course did not make this site, but it's an awesome filler.</p>
               </div>
             </div>
             <div class="five wide column">
-              <div class="herocolumnpro">
+              <div class="herocolumnproSmall">
                 <h3>This section is lacking in content... <br>Have you checked out the mini-projects in <br> <a href="#forbidden">The Danger Zone?</a></h3>
               </div>
             </div>
             <div class="eleven wide column">
-              <div class="herocolumnpro">
+              <div class="herocolumnproSmall">
                 <canvas class="webgl">
 
                 </canvas>

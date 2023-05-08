@@ -255,6 +255,7 @@ let checkView = function() {
     $('.resume').attr("style", "display:none");
     $('.projects').attr("style", "display:none");
     $('.projectsSmall').attr("style", "display:block");
+    $('#massiveLandingWave').attr("style", "display:none");
   } else if (this.window.innerWidth >= 500) {
     $('#largeSidebar').attr("style", "display:block");
     $('#smallSidebar').removeClass("visible");
@@ -264,6 +265,7 @@ let checkView = function() {
     $('.resume').attr("style", "display:block");
     $('.projectsSmall').attr("style", "display:none");
     $('.projects').attr("style", "display:block");
+    $('#massiveLandingWave').attr("style", "display:block");
   }
 }
 

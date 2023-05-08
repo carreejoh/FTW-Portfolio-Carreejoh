@@ -15,10 +15,10 @@
 }
 
 /* For Custom Menu */
-
+/*
 body {
     background-image: url('../imgs/background\ image\ merge\ 4.png');
-}
+} */
 
 #experimental {
     font-family: 'Turret Road', cursive;
@@ -63,6 +63,10 @@ body {
     margin-left: 10%;
     padding-top: .5%;
     padding-bottom: .5%;
+}
+
+#largeSidebar {
+    background-color: var(--darkgray);
 }
 
 /*
@@ -111,7 +115,15 @@ body {
 .landing {
     width: 100%;
     background-size: 100%;
-    background-image: url('../imgs/background\ image\ merge\ 4.png');
+}
+
+.landingContent {
+    background-image: linear-gradient(30deg, var(--lightpurple), 12%, var(--darkblue));
+}
+
+#massiveLandingWave {
+    height: 450px;
+    margin-bottom: -2%;
 }
 
 .welcome {
@@ -137,7 +149,7 @@ body {
 }
 
 .thanks {
-    margin-top: 37%;
+    margin-top: 7%;
     margin-left: 1%;
     width: 100%;
 }
@@ -282,7 +294,7 @@ body {
 }
 
 #chessImg {
-    height: 335px;
+    
 }
 
 .herocolumnpro {
@@ -302,17 +314,32 @@ body {
 /* Small Projects */
 
 .projectsSmall {
-    background-image: linear-gradient(-60deg, var(--lightpurple), 12%, var(--darkblue));
+    margin-top: 10%;
+    background-image: linear-gradient(120deg, var(--darkblue), 80%, orange);
+}
+
+#projectWave {
+    height: 110px;
+}
+
+#projectsContainer {
+    margin-top: 12%;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.herocolumnproSmall {
+    width: 100%;
 }
 
 /* Resume */
 
 .resume {
     width: 100%;
-   /* background-image: url('./resumeimage.png'); */
-    padding: 10%;
-    padding-top: 16%;
-    padding-bottom: 10%;
+    background-color: var(--darkblue);
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-bottom: 5%;
 } 
 
 #resumecolor {
@@ -321,6 +348,14 @@ body {
 
 
 .herocolumn {
+    border: solid 3px var(--darkgray);
+    background-color: rgb(230, 227, 227);
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+/* .herocolumn {
     border: solid 2px var(--darkgray);
     border-radius: 10px;
     background-color: white;
@@ -328,7 +363,7 @@ body {
     height: 100%;
     padding: 3%;
     color: var(--darkblue);
-}
+}*/
 
 #profilepic {
     width: 100%;
@@ -374,8 +409,17 @@ body {
     .projects {
         width: 100%;
         padding: 15%;
-        padding-top: 10%;
+        padding-top: 5%;
        /* background: linear-gradient(60deg, var(--darkpurple), 79%, var(--lightblue)); */
+    }
+
+    .projectsMassive {
+        width: 100%;
+        padding-top: 50%;
+    }
+
+    .massiveProjectsWave {
+        background-image: linear-gradient(45deg, var(--darkblue), 68%, var(--lightpurple));
     }
 
     .resumewave {
